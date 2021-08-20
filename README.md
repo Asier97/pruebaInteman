@@ -18,3 +18,5 @@ Esta aplicación correrá en PHP y usará una base de datos MySQL. A continuaci�
 - Eloquent CRM
 - Páginas Blade
 - Laravel-Livewire
+- jQuery
+- Bootstrap
