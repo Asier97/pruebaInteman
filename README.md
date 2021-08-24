@@ -15,8 +15,14 @@ Esta aplicación correrá en PHP y usará una base de datos MySQL. A continuaci�
 
 - MySQL connector para PHP
 - Laravel Framework
-- Eloquent CRM
+- Eloquent ORM
 - Páginas Blade
 - Laravel-Livewire
 - jQuery
-- Bootstrap
+- Bootstrap 4
+
+## Cómo deplegar (en construccion)
+
+- Configurar .env
+- Crear BD con utf8mb4_unicode_ci
+- php artinsan migrate o php artinsan migrate:fresh
