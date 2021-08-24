@@ -1,0 +1,18 @@
+#listado .data, #add {
+    padding-top: 6px;
+    height: 50px;
+    border-bottom: 1px solid #202020;
+}
+
+#add {
+    border-top: 1px solid #202020;
+}
+
+#add button, .btn-danger {
+    float: right;
+}
+
+#coletilla {
+    padding: 10px 15px 5px;
+    text-align: right;
+}

@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(247, 253, 255);
+}
+
+#general {
+    display: block;
+    margin: 10px auto;
+    padding-top: 20px;
+    min-height: 500px;
+    background-color: rgb(222, 231, 235);
+    border: 1px solid rgb(195, 207, 212);
+    border-radius: 10px;
+}
+
+#titulo {
+    margin: 5px 0px 20px;
+}
+
+#listado {
+    margin: 5px auto;
+    background-color: rgb(250, 254, 255);
+    border: 1px solid rgb(195, 207, 212);
+    max-height: 250px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+}
+
+#listado::-webkit-scrollbar {
+    display: none;
+}
+
+#desglose {
+    margin: 10px auto;
+    background-color: lightseagreen;
+}
+
+label {
+    margin: 4px 0px;
+}
+
+.info {
+    color: #33393f;
+    font-style: italic;
+}
+
+.hint {
+    color: #6c7986;
+    font-style: italic;
+    margin: 4px 0px 4px 10px;
+    font-size: 12px;
+}
