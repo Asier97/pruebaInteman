@@ -1,18 +1,34 @@
+/* Contenedor principal del listado */
+#listado {
+    max-height: 275px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+}
+
+#listado::-webkit-scrollbar {
+    display: none;
+}
+
+/* Entradas del listado */
+#add {
+    border-top: 1px solid #202020;
+}
+
 #listado .data, #add {
     padding-top: 6px;
     height: 50px;
     border-bottom: 1px solid #202020;
 }
 
-#add {
-    border-top: 1px solid #202020;
-}
-
+/* Detalles de las entradas */
 #add button, .btn-danger {
     float: right;
 }
 
 #coletilla {
-    padding: 10px 15px 5px;
+    padding: 10px 10px 5px;
     text-align: right;
+    /*display: none*/
 }

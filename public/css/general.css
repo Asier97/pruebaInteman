@@ -1,41 +1,35 @@
+/* Estilos generales */
 body {
     background-color: rgb(247, 253, 255);
 }
 
+/* Contenedor principal */
 #general {
     display: block;
     margin: 10px auto;
     padding-top: 20px;
+    padding-bottom: 30px;
     min-height: 500px;
     background-color: rgb(222, 231, 235);
     border: 1px solid rgb(195, 207, 212);
     border-radius: 10px;
 }
 
+/* Componentes del contenedor principal */
 #titulo {
-    margin: 5px 0px 20px;
+    margin: 5px 0px 30px;
 }
 
-#listado {
-    margin: 5px auto;
+.contenedor-data {
     background-color: rgb(250, 254, 255);
     border: 1px solid rgb(195, 207, 212);
-    max-height: 250px;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    position: relative;
 }
 
-#listado::-webkit-scrollbar {
-    display: none;
+.contenedor-data div {
+    padding: 7px 10px;
 }
 
-#desglose {
-    margin: 10px auto;
-    background-color: lightseagreen;
-}
-
+/* Estilos de labels */
 label {
     margin: 4px 0px;
 }

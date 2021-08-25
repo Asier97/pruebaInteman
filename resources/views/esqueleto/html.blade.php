@@ -23,19 +23,24 @@
             <h2>Asier Suárez</h2>
         </div>
 
-        <div id="listado" class="row">
+        <div class="row align-items-start">
 
-            @yield('listado')
+            <div class="col-5">
 
+                <div id="listado" class="contenedor-data">
+                    @yield('listado')
+                </div>
+    
+            </div>
+    
+            <div class="col-7">
+
+                <div id="desglose" class="contenedor-data">
+                    @yield('desglose')
+                </div>
+    
+            </div>
         </div>
-
-        <div id="desglose" class="row">
-
-            @yield('desglose')
-
-        </div>
-
     </div>
-
 </body>
 </html>
