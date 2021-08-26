@@ -1,4 +1,14 @@
+/* Detalles del formulario */
+#id_tarea {
+    float: right;
+}
+
 textarea {
     min-height: 40px;
     max-height: 200px;
+}
+
+/* Botones */
+#btnmod, #btndel {
+    display: none;
 }

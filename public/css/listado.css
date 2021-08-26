@@ -22,8 +22,12 @@
     border-bottom: 1px solid #202020;
 }
 
+#listado div:nth-child(even):not(#coletilla) {
+    background-color: rgb(242, 248, 255);
+}
+
 /* Detalles de las entradas */
-#add button, .btn-danger {
+#add button, .data .btn-danger {
     float: right;
 }
 

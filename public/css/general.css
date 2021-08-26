@@ -16,8 +16,12 @@ body {
 }
 
 /* Componentes del contenedor principal */
+#general .col-12 {
+    padding: 15px;
+}
+
 #titulo {
-    margin: 5px 0px 30px;
+    margin: 5px 0px 15px;
 }
 
 .contenedor-data {
