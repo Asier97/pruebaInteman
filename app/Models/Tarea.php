@@ -9,7 +9,7 @@ class Tarea extends Model
 {
     //use HasFactory;
 
-    protected $table = 'fallecidos';
+    protected $table = 'tareas';
     protected $primaryKey = 'id';
 
 }

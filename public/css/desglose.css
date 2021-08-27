@@ -8,7 +8,4 @@ textarea {
     max-height: 200px;
 }
 
-/* Botones */
-#btnmod, #btndel {
-    display: none;
-}
+

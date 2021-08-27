@@ -49,3 +49,12 @@ label {
     margin: 4px 0px 4px 10px;
     font-size: 12px;
 }
+
+/* Botones */
+.btn-oculto {
+    display: none;
+}
+
+.btn-visible {
+    display: inline-block;
+}

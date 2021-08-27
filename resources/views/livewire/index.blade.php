@@ -5,19 +5,19 @@
 
             <div id="add">
                 <label for="btnadd" class="info">Añadir tarea</label>
-                <button id="btnadd" type="button" class="btn btn-primary" wire:click="create">Añadir</button>
+                <button id="btnadd" type="button" class="btn btn-primary" wire:click="new">Añadir</button>
             </div>
 
-            @foreach($listaTareas as $t)
-                <div class="data" wire:click="show({{ $t->id }})">
-                    <label>{{ $t->nombre }}</label>
+            @foreach($tareas as $key => $t)
+                <div class="data" wire:click="show({{ $key }})">
+                    <label>{{$t->nombre}}</label>
                     <label class="hint">ID: {{ $t->id }}</label>
-                    <button type="button" class="btn btn-danger" wire:click="delete({{ $t->id }})"><i class="fas fa-trash"></i></button>
+                    <button type="button" class="btn btn-danger" wire:click.stop="delete({{ $key }})"><i class="fas fa-trash"></i></button>
                 </div>
             @endforeach
         
             <div id="coletilla">
-                <a class="btn btn-primary" href="#add" role="button">&nbsp;<i class="fas fa-angle-up"></i>&nbsp;</a>
+                <a class="btn btn-primary {{$btnup}}" href="#add" role="button">&nbsp;<i class="fas fa-angle-up"></i>&nbsp;</a>
             </div>
 
         </div>
@@ -28,22 +28,27 @@
 
             <div class="form-group">
                 <label for="nombre">Tarea:</label>
-                <label id="id_tarea" class="hint">{{ $tid }}</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre de la tarea" wire:model="nombre">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre de la tarea" wire:model="tarea.nombre">
             </div>
             
             <div class="form-group">
                 <label for="descripcion">Descripción</label>
-                <textarea class="form-control" id="descripcion" aria-describedby="hint" wire:model="descripcion"></textarea>
+                <textarea class="form-control" id="descripcion" aria-describedby="hint" wire:model="tarea.descripcion"></textarea>
                 <small id="hint" class="form-text text-muted">Aquí va la descripción de la tarea.</small>
             </div>
             
             <div>
-                <button id="btnadd" type="button" class="btn btn-success" wire:click="create">Añadir</button>
-                <button id="btnmod" type="button" class="btn btn-primary">Modificar</button>
-                <button id="btndel" type="button" class="btn btn-danger">Eliminar</button>
+                <button type="button" class="btn btn-success {{$btnadd}}" wire:click="create">Añadir</button>
+                <button type="button" class="btn btn-primary {{$btnact}}" wire:click="modify">Modificar</button>
+                <button type="button" class="btn btn-danger {{$btnact}}" wire:click="delete">Eliminar</button>
             </div>
 
+        </div>
+    </div>
+    <!-- Seccion simple con el botón del seeder -->
+    <div class="col-12">
+        <div>
+            <button type="button" class="btn btn-secondary float-right" wire:click="rellenarPorDefecto">Poner datos por defecto</button>
         </div>
     </div>
 </div>
