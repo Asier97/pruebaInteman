@@ -26,3 +26,5 @@ Esta aplicación correrá en PHP y usará una base de datos MySQL. A continuaci�
 - Configurar .env
 - Crear BD con utf8mb4_unicode_ci
 - php artinsan migrate o php artinsan migrate:fresh
+- php artisan db:seed --class=TareaSeeder
+- php artisan tareas:reiniciar
