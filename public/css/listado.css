@@ -26,6 +26,10 @@
     background-color: rgb(242, 248, 255);
 }
 
+#listado .data:hover {
+    background-color: rgb(222, 228, 235);
+}
+
 #add button {
     float: right;
 }
