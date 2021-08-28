@@ -8,3 +8,4 @@
 <link rel="stylesheet" type="text/css" href="css/general.css"/>
 <link rel="stylesheet" type="text/css" href="css/listado.css"/>
 <link rel="stylesheet" type="text/css" href="css/desglose.css"/>
+<link rel="stylesheet" type="text/css" href="css/msgs.css"/>

@@ -22,17 +22,49 @@
     border-bottom: 1px solid #202020;
 }
 
-#listado div:nth-child(even):not(#coletilla) {
+#listado > div:nth-child(even) {
     background-color: rgb(242, 248, 255);
 }
 
-/* Detalles de las entradas */
-#add button, .data .btn-danger {
+#add button {
     float: right;
 }
 
-#coletilla {
-    padding: 10px 10px 5px;
-    text-align: right;
-    /*display: none*/
+.data .btn-danger {
+    position: absolute;
+    right: 10px;
+}
+
+.datatxt {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    height: 32px;
+    overflow: hidden;
+}
+
+/* Botón de ir al inicio de la lista */
+#listUp {
+    margin: 0px;
+    background-color: rgb(175, 198, 207);
+    border-left: 1px solid rgb(150, 170, 179);
+    border-right: 1px solid rgb(150, 170, 179);
+    border-bottom: 1px solid rgb(150, 170, 179);
+    border-radius: 0px 0px 5px 5px;
+}
+
+#listUp:hover {
+    background-color: rgb(159, 180, 189);
+}
+
+#listUp a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: rgb(108, 117, 125);
+}
+
+#listUp a:hover {
+    text-decoration: none;
+    color: rgb(95, 102, 109);
 }

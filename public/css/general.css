@@ -29,7 +29,7 @@ body {
     border: 1px solid rgb(195, 207, 212);
 }
 
-.contenedor-data div {
+.contenedor-data > div {
     padding: 7px 10px;
 }
 
@@ -57,4 +57,13 @@ label {
 
 .btn-visible {
     display: inline-block;
+    visibility: visible;
+}
+
+.div-invisible {
+    visibility: hidden;
+}
+
+.div-visible {
+    visibility: visible;
 }

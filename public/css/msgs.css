@@ -1,0 +1,26 @@
+/* Contenedor principal del mensaje de información */
+#notificacion {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    width: 50%;
+    display: none;
+}
+
+#notificacion div {
+    position: relative;
+    left: -50%;
+    border-left: 1px solid rgb(66, 73, 77);
+    border-right: 1px solid rgb(66, 73, 77);
+}
+
+/* Color informativo del mensaje y contenedor del mensaje en sí */
+#detalle {
+    height: 10px;
+}
+
+#msgs {
+    background-color: #FFF;
+    text-align: center;
+    padding: 15px 0px 10px;
+}
